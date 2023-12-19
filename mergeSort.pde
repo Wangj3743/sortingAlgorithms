@@ -1,11 +1,7 @@
 int[] mergeSort(int[] arr, int start, int end) {
   if (start == end) {
-    println(start, end);
-    println();
     return new int[] {arr[start]};
   } else {
-    println("merge");
-    println();
     int mid = (start+end)/2;
     int[] left = mergeSort(arr, start, mid);
     int[] right = mergeSort(arr, mid+1, end);
@@ -23,7 +19,7 @@ int[] merge(int[] a, int[] b) {
   
   // comparisons
   while (i != a.length && j != b.length) {
-    if (a[i] > b[j]) {
+    if (a[i] < b[j]) {
       c[curr] = a[i];
       i++;
     } else {

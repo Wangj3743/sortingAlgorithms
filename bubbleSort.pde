@@ -8,3 +8,11 @@ int[] bubbleSort(int[] arr) {
   }
   return arr;
 }
+
+
+int[] swapNext(int[] arr, int i) {
+  int next = arr[i+1];
+  arr[i+1] = arr[i];
+  arr[i] = next;
+  return arr;
+}

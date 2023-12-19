@@ -8,3 +8,11 @@ int[] insertionSort(int[] arr) {
   }
   return arr;
 }
+
+
+int[] swapPrev(int[] arr, int i) {
+  int prev = arr[i-1];
+  arr[i-1] = arr[i];
+  arr[i] = prev;
+  return arr;
+}

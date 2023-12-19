@@ -3,20 +3,7 @@ int[] arr2 = new int[] {54,96,94,77,65,42,76,98,23,87,23,98,21,56,53,26};   // e
 
 void setup() {
   exit();
-  //printArray(bubbleSort(arr1));
-  //printArray(insertionSort(arr1));
-}
-
-int[] swapPrev(int[] arr, int i) {
-  int prev = arr[i-1];
-  arr[i-1] = arr[i];
-  arr[i] = prev;
-  return arr;
-}
-
-int[] swapNext(int[] arr, int i) {
-  int next = arr[i+1];
-  arr[i+1] = arr[i];
-  arr[i] = next;
-  return arr;
+  printArray(bubbleSort(arr1));
+  printArray(insertionSort(arr1));
+  printArray(mergeSort(arr1, 0, arr1.length-1));
 }
