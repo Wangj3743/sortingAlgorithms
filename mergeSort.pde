@@ -1,4 +1,4 @@
-int[] mergeSort(int[] arr, int start, int end) {
+ int[] mergeSort(int[] arr, int start, int end) {
   if (start == end) {
     return new int[] {arr[start]};
   } else {
@@ -18,7 +18,7 @@ int[] merge(int[] a, int[] b) {
   int j = 0;
   
   // comparisons
-  while (i != a.length && j != b.length) {
+  while (i < a.length && j < b.length) {
     if (a[i] < b[j]) {
       c[curr] = a[i];
       i++;
