@@ -1,6 +1,4 @@
 int[] selectionSort(int[] arr) {
-  int[] arr2 = new int[arr.length];
-
   for (int startIndex=0; startIndex<arr.length; ++startIndex) {
     int currMinValue = arr[startIndex];
     int currMinIndex = startIndex;
@@ -11,10 +9,9 @@ int[] selectionSort(int[] arr) {
         currMinIndex = i;
       }
     }
-    arr2[startIndex] = currMinValue;
-    arr2 = swap(arr, startIndex, currMinIndex);
+    arr = swap(arr, startIndex, currMinIndex);
   }
-  return arr2;
+  return arr;
 }
 
 
