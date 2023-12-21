@@ -4,12 +4,14 @@ int[] arr3 = new int[] {54,96,94,77,65,42,76,98,23,87,23,98,21,56,53,26};   // e
 
 void setup() {
   exit();
-  //printarray(bubbleSort(arr1));
-  //printarray(insertionSort(arr1));
-  printarray(mergeSort(arr1, 0, arr1.length-1));
+  printarray("BS", bubbleSort(arr1));
+  printarray("SS", selectionSort(arr1));
+  printarray("IS", insertionSort(arr1));
+  printarray("MS", mergeSort(arr1, 0, arr1.length-1));
 }
 
-void printarray(int[] arr) {
+void printarray(String name, int[] arr) {
+  print(name + ": ");
   for (int i=0; i<arr.length; ++i) {
     if (i == arr.length-1) {
       println(arr[i]);

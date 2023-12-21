@@ -1,4 +1,4 @@
- int[] mergeSort(int[] arr, int start, int end) {
+int[] mergeSort(int[] arr, int start, int end) {
   if (start == end) {
     return new int[] {arr[start]};
   } else {
